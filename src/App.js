@@ -8,23 +8,26 @@ import Error from "./pages/Error"
 import About from "./pages/About"
 import Cart  from "./pages/Cart"
 import Header from './components/Header';
+import Footer from './components/Footer';
+
 
 function App() {
   
   return (
     <div className='w-full h-screen'>
+    
     <Header/>
-
+        
       <Routes>
         <Route path='/'element={<Home/>}></Route>
         <Route path='/about'element={<About/>}></Route>
         <Route path='/contact'element={<Contact/>}></Route>
         <Route path='/cart'element={<Cart/>}></Route>
         <Route path='/product'element={<Product/>}></Route>
-        <Route path='/singlepage:/id'element={<SinglePage/>}></Route>
+        <Route path='/singlepage/:id'element={<SinglePage/>}></Route>
         <Route path='*'element={<Error/>}></Route>
       </Routes>
- 
+      <Footer/>
     </div>
   )
 }
