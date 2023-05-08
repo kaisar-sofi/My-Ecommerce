@@ -29,9 +29,9 @@ const ListView = () => {
                                     
 
                                            
-                                        <div className='flex items-center justify-center p-8 gap-12  border-black border-[1px] mb-4  transition duration-700'>
+                                        <div className='grid  p-8 gap-12 sm:grid-cols-2  border-black border-[1px] mb-4  transition duration-700'>
 
-                                           <figure className=' bg-white w-[60%]  shadow-xl grid place-items-center hover:scale-105 transition duration-700 '>
+                                           <figure className=' bg-white  shadow-xl sm:shadow-none grid place-items-center hover:scale-105 transition duration-700 '>
                                               <img src={ele.image} alt={ele.name} className='w-[95%] mr-5 ml-5 mb-3 mt-3 rounded-lg ' />
                                             </figure>
 
@@ -42,7 +42,7 @@ const ListView = () => {
                                                 
                                                 <div className=''>
                                                   <p>{<Price price={ele.price}/>}</p>
-                                                  <p className='text-justify mb-3'>
+                                                  <p className='text-left mb-3'>
                                                      
                                                     {subdescription}...
                                                      
