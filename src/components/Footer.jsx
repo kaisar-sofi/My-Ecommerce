@@ -1,9 +1,9 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import {BsFacebook} from "react-icons/bs" 
 import {BsInstagram} from "react-icons/bs"
 import {AiOutlineYoutube} from "react-icons/ai"
 import {AiOutlineHome} from "react-icons/ai"
-import {AiOutlineMail,AiOutlineCopyright} from "react-icons/ai"
+import {AiOutlineMail,AiOutlineCopyright,AiOutlineArrowRight} from "react-icons/ai"
 import {IoMdCall} from "react-icons/io"
 const Footer = () => {
   return (
@@ -16,9 +16,9 @@ const Footer = () => {
                         <p>Ready to get started? <br />Talk to us today</p>
                     </div>
                     <div>
-                        <button class="inline-flex items-center w-full px-5 py-3 mb-3 mr-1 text-base font-semibold text-white no-underline align-middle bg-blue-600 border border-transparent border-solid rounded-md cursor-pointer select-none sm:mb-0 sm:w-auto hover:bg-blue-700 hover:border-blue-700 hover:text-white focus-within:bg-blue-700 focus-within:border-blue-700">
+                        <button className="flex justify-center items-center gap-3 w-full px-5 py-3 mb-3 mr-1 text-base font-semibold text-white no-underline align-middle bg-blue-600 border border-transparent border-solid rounded-md cursor-pointer select-none sm:mb-0 sm:w-auto hover:bg-blue-700 hover:border-blue-700 hover:text-white focus-within:bg-blue-700 focus-within:border-blue-700">
                         Get Started
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        <AiOutlineArrowRight className='text-2xl'/>
                         </button>
                     </div>
                 </div>
@@ -33,8 +33,9 @@ const Footer = () => {
                     <div className='flex flex-col gap-3 '>
                         <p>SIGN UP TO OUR NEWSLETTER</p>
                         <input type="text" placeholder='Email' className='p-1 text-black focus:outline rounded-md outline-none focus:border-black' />
-                        <button class="inline-block px-5 py-2 w-fit text-white bg-blue-600 rounded-md hover:bg-blue-700 md:mx-0">
+                        <button className="flex justify-center items-center gap-3 px-5 py-2 w-fit text-white bg-blue-600 rounded-md hover:bg-blue-700 md:mx-0">
                             Subscribe
+                            <AiOutlineArrowRight className='text-2xl'/>
                         </button>  
                     </div>
 

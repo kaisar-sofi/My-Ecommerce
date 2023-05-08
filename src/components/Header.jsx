@@ -4,9 +4,9 @@ import {BsCartCheck} from "react-icons/bs"
 import MobileView from './MobileView'
 import {BiMenuAltRight} from "react-icons/bi"
 import { Cartcontext } from '../context/Cartcontext'
-import { useAuth0 } from "@auth0/auth0-react";
+// import { useAuth0 } from "@auth0/auth0-react";
 const Header = () => {
-  const { loginWithRedirect,logout,isAuthenticated,user } = useAuth0();
+  // const { loginWithRedirect,logout,isAuthenticated,user } = useAuth0();
   const {total_item} = useContext(Cartcontext)
   const[active,setActive] =useState(false);
 

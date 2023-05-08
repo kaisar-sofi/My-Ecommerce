@@ -1,7 +1,5 @@
 import React from 'react'
-import { useContext } from 'react'
 import {BsFillGridFill,BsListTask} from "react-icons/bs"
-import { AppContext } from '../context/ProductContext'
 
 const Sort = ({views,view,handlesort,}) => {
 //  const{sortingvalues} = useContext(AppContext)

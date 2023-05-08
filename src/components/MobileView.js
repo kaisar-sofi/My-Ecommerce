@@ -2,9 +2,9 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import {BsCartCheck} from "react-icons/bs"
 import {AiOutlineClose} from "react-icons/ai"
-import { useAuth0 } from "@auth0/auth0-react";
+// import { useAuth0 } from "@auth0/auth0-react";
 const MobileView = ({handleIcon,active}) => {
-  const { loginWithRedirect,logout,isAuthenticated,user } = useAuth0();
+  // const { loginWithRedirect,logout,isAuthenticated,user } = useAuth0();
   return (
     <>
     <ul className={active?"sm:hidden flex flex-col text-lg font-bold items-center fixed z-30 inset-0 justify-center left-1/4 gap-9 bg-black/10 backdrop-blur-2xl":"hidden"}> 

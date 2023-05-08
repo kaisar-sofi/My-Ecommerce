@@ -3,7 +3,7 @@ import { AppContext } from '../context/ProductContext'
 import {BsCheck} from "react-icons/bs"
 import Price from "../components/helpers/Price"
 const FilterSection = () => {
-  const {filters:{text,category,color,maxprice,price,minprice},handleclearFilters,handlechange,all_products,handleSearch} = useContext(AppContext)
+  const {filters:{text,color,maxprice,price,minprice},handleclearFilters,handlechange,all_products,handleSearch} = useContext(AppContext)
   // console.log(all_products)
   // console.log("filter-secton")
 // console.log(category)
@@ -108,7 +108,7 @@ const FilterSection = () => {
                            
                             {
                               
-                                color== ele ?(<BsCheck className=' text-yellow-700 text-xl '/>) :(null)
+                                color=== ele ?(<BsCheck className=' text-yellow-700 text-xl '/>) :(null)
                             }
 
                         </button>

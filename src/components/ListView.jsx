@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { AppContext } from '../context/ProductContext'
 import { NavLink } from 'react-router-dom'
 import Price from './helpers/Price'

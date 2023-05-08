@@ -1,4 +1,4 @@
-import { createContext, useEffect, useReducer, useState } from "react";
+import { createContext, useEffect, useReducer } from "react";
 import reducer from "../reducers/Cartreducer"
 // import { json } from "react-router-dom";
 import { toast } from "react-hot-toast";
@@ -11,13 +11,17 @@ export const Cartcontext = createContext()
 function Mycartcontext ({children}){
     const getlocalcartdata=()=>{
        let cartdata= localStorage.getItem("cartitem")
-       if(cartdata===[])
-       {
-        return[]
-       }
-       else{
-        return JSON.parse(cartdata)
-       }
+    //    if(cartdata===[])
+    //    {
+    //     return[]
+    //    }
+    //    else{
+    //     return JSON.parse(cartdata)
+    //    }
+
+            const parseddata = JSON.parse(cartdata);
+            if(!Array.isArray(parseddata))return[];
+            return parseddata
     }
     const initialstate = {
             cart:getlocalcartdata(),

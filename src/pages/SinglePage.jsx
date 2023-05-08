@@ -25,7 +25,7 @@ const SinglePage = () => {
 
   useEffect(()=>{
     getsingleprodcuct(id)
-  },[])
+  },[getsingleprodcuct])
   
  
   return (

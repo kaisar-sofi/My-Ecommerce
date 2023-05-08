@@ -42,7 +42,7 @@ const Color = () => {
                         onClick={()=>setMycolor(color)}
                          className={mycolor ===color ? 'rounded-full w-5 h-5 outline-none cursor-pointer' :'rounded-full w-5 h-5 outline-none opacity-75  cursor-pointer'}>
                             {
-                                mycolor== color ?(<BsCheck className=' text-yellow-700 text-xl '/>) :(null)
+                                mycolor=== color ?(<BsCheck className=' text-yellow-700 text-xl '/>) :(null)
                             }
                         </button>
                         
