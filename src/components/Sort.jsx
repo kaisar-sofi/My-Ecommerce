@@ -6,7 +6,7 @@ const Sort = ({views,view,handlesort,}) => {
 //  console.log(sortingvalues)
   return (
    <>
-    <div className=' mb-3 '>
+    <div className=' mb-3 hidden sm:block'>
         <div className='flex justify-between'>
 
            <div className='flex gap-3 items-baseline'>
@@ -30,7 +30,7 @@ const Sort = ({views,view,handlesort,}) => {
             
             </div> 
 
-            <div>
+            <div className='hidden sm:block'>
               Products
             </div> 
 

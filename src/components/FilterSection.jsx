@@ -37,10 +37,10 @@ const FilterSection = () => {
    <>
    {/* grid sm:space-y-8 sm:grid-cols-1 grid-cols-3  */}
     <div>
-      <div className='flex justify-between mb-4  items-center sm:grid sm:space-y-8'>
+      <div className='flex flex-col-reverse gap-2 smm:justify-between smm:flex-row mb-4  items-center sm:grid sm:space-y-8'>
 
       {/* input-search */}
-        <div className='hidden smm:block'>
+        <div className=''>
           <form action="" onSubmit={(e)=>e.preventDefault()}>
 
             <input type="text" name='text' placeholder='Search'
@@ -71,7 +71,7 @@ const FilterSection = () => {
 
             {/* company-field */}
 
-            <div className=''>
+            <div className='hidden sm:block'>
                 <select name="company" id="company" onClick={handlechange}
                 className='outline-[2px] border-2'>
 
